@@ -19,7 +19,7 @@ function validation(){
 
 function sendMessage(){
     let message = style+messageInput.value+style
-    let api = `https://web.whatsapp.com/send/?phone=${number.value}&text=${message}`
+    let api = `https://api.whatsapp.com/send/?phone=${number.value}&text=${message}`
     let a = document.createElement('a')
     a.href = api
     a.setAttribute('target', "_blank")
